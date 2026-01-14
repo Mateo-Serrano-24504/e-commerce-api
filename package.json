@@ -3,5 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@mateoserrano/simple-config": "1.1.7",
+    "eslint": "9.39.1",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.0.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript-eslint": "8.46.4"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
 }
